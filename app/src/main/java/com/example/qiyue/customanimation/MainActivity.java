@@ -9,11 +9,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.qiyue.customanimation.activity.CameraActivity;
 import com.example.qiyue.customanimation.activity.RatioActivity;
 
 public class MainActivity extends AppCompatActivity {
     protected ListView mListView;
-    protected String []items = {"item1","item2","item3","item4","item5"};
+    protected String []items = {"matrix实现动画","camera实现3D动画","item3","item4","item5"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, RatioActivity.class));
                         break;
                     case 1:
+                        startActivity(new Intent(MainActivity.this, CameraActivity.class));
                         break;
                     case 2:
                         break;
