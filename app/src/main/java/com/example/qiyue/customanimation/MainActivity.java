@@ -9,12 +9,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.qiyue.customanimation.activity.AnimatorSetActivity;
 import com.example.qiyue.customanimation.activity.CameraActivity;
 import com.example.qiyue.customanimation.activity.RatioActivity;
+import com.example.qiyue.customanimation.activity.Xml4AnimActivity;
 
 public class MainActivity extends AppCompatActivity {
     protected ListView mListView;
-    protected String []items = {"matrix实现动画","camera实现3D动画","item3","item4","item5"};
+    protected String []items = {"matrix实现动画","camera实现3D动画","AnimatorSet设置属性动画",
+            "加载xml属性动画","item5"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,8 +37,10 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, CameraActivity.class));
                         break;
                     case 2:
+                        startActivity(new Intent(MainActivity.this, AnimatorSetActivity.class));
                         break;
                     case 3:
+                        startActivity(new Intent(MainActivity.this, Xml4AnimActivity.class));
                         break;
                     case 4:
                         break;

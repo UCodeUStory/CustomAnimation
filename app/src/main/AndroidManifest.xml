@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".activity.RatioActivity" />
         <activity android:name=".activity.CameraActivity"></activity>
+        <activity android:name=".activity.AnimatorSetActivity"/>
+        <activity android:name=".activity.Xml4AnimActivity"/>
     </application>
 
 </manifest>

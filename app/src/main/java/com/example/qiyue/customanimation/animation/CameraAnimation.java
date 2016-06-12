@@ -38,7 +38,7 @@ public class CameraAnimation extends Animation {
         //x, y, z 由远到近
         camera.translate(0f, 0f, (1300 - 1300*interpolatedTime));
         //慢慢旋转360度
-        camera.rotateY(360*0.2f);
+        camera.rotateY(360*interpolatedTime);
         camera.getMatrix(matrix);
         matrix.preTranslate(-mCenterX, -mCenterY);
         matrix.postTranslate(mCenterX,mCenterY);
