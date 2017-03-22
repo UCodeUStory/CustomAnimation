@@ -1,0 +1,41 @@
+
+git push ssh://qiyue@10.30.0.1:29418/Android_8939/platform/wangui3/doc HEAD:refs/for/master
+
+
+git clone ssh://qiyue@10.30.0.1:29418/Android_8939/platform/wangui3/doc
+
+  
+git status 修改的为红色
+
+git add 后修改的为 绿色
+
+git reset 撤销add操作
+
+git reset filename 撤销者个文件add
+
+git commit -m “注释”
+
+git log 查看提交id
+
+git reset --hard commit_id 
+
+git branch 查看本地分支
+
+git branch -b 分支名字 创建并切换
+
+git branch -d 分支名 删除本地分支
+
+git branch -D 分支名 强制删除分支
+
+git checkout 分支名切换
+
+git merge 要合并的分支
+
+
+
+
+git pull 更新代码（之前一定要确保不要冲突）
+
+
+
+
